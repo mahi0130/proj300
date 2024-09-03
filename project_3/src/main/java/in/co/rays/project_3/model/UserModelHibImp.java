@@ -518,4 +518,4 @@ public class UserModelHibImp implements UserModelInt {
 		return pk;
 	}
 
- }
+}

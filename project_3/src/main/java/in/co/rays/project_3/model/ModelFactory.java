@@ -164,45 +164,21 @@ public final class ModelFactory {
 		return facultyModel;
 	}
 
-	public JobModelInt getJobModel() {
-		JobModelInt JobModel = (JobModelInt) modelCache.get("JobModel");
-		if (JobModel == null) {
+	
+		
+	public StaffMemberModelInt getStaffMemberModel() {
+
+		StaffMemberModelInt staffMemberModel = (StaffMemberModelInt) modelCache.get("staffMemberModel");
+		if (staffMemberModel == null) {
 			if ("Hibernate".equals(DATABASE)) {
-				JobModel = new JobModelHibImp();
+				staffMemberModel = new StaffMemberModelHibImp();
 			}
-			modelCache.put("JObModel", JobModel);
+			
+			modelCache.put("staffMemberModel", staffMemberModel);
 		}
 
-		return JobModel;
+		return staffMemberModel;
 	}
+
 	
-	
-	
-	
-	public ClientModelInt getClientModel() {
-		ClientModelInt clientModel = (ClientModelInt) modelCache.get("clientModel");
-		if (clientModel == null) {
-			if ("Hibernate".equals(DATABASE)) {
-				clientModel = new ClientModelHibImpl();
-			}
-			if ("JDBC".equals(DATABASE)) {
-				clientModel = new ClientModelHibImpl();
-			}
-			modelCache.put("marksheetModel", clientModel);
-		}
-		return clientModel;
 	}
-	
-	public OrderModelInt getOrderModel() {
-		OrderModelInt orderModel = (OrderModelInt) modelCache.get("orderModel");
-		if (orderModel == null) {
-			if ("Hibernate".equals(DATABASE)) {
-				orderModel = new OrderModelHibImpl();
-			}
-			modelCache.put("orderModel", orderModel);
-		}
-		return orderModel;
-	}
-	
-	
-}

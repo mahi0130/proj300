@@ -24,6 +24,15 @@ public class DataValidator {
 			return false;
 		}
 	}
+	
+	public static boolean isTooLong(String val, int maxLength) {
+	    if (isNotNull(val)) {
+	        return val.length() > maxLength;
+	    } else {
+	        return false;
+	    }
+	}
+
 
 	/**
 	 * Checks if value of Password is in between 8 and 12 characters

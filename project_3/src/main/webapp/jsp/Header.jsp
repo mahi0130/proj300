@@ -27,7 +27,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 <style type="text/css">
-.mahi {
+.amit {
 	background-image: linear-gradient(to bottom right, Teal, white, Orange);
 }
 </style>
@@ -45,7 +45,7 @@
 		}
 	%>
 	<div class="header">
-		<nav class="navbar navbar-expand-lg fixed-top  mahi">
+		<nav class="navbar navbar-expand-lg fixed-top  amit">
 		 <a class="navbar-brand" href="<%=ORSView.WELCOME_CTL%>">
 
 		<img src="<%=ORSView.APP_CONTEXT%>/img/custom.png" width="190px"
@@ -92,54 +92,27 @@
 				<%
 					} else if (userDto.getRoleId() == RoleDTO.ADMIN || userDto.getRoleId() == RoleDTO.COLLEGE_SCHOOL) {
 				%>
-								
+									
 					
-				<li class="nav-item dropdown" style="padding-left: 5px;"><a
+					<li class="nav-item dropdown" style="padding-left: 5px"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false"> <font style="color: Black;">JOB</font>
-				</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="<%=ORSView.JOB_CTL%>"> <i
-							class="fas fa-user-circle"></i>Add Job
-						</a> <a class="dropdown-item" href="<%=ORSView.JOB_LIST_CTL%>"><i
-							class="fas fa-user-friends"></i>Job List</a>
-					</div></li>
-					
-						<li class="nav-item dropdown" style="padding-left: 5px;"><a
-					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-					role="button" data-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false"> <font style="color: Black;">ORDER</font>
-				</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="<%=ORSView.ORDER_CTL%>"> <i
-							class="fas fa-user-circle"></i>Add Order
-						</a> <a class="dropdown-item" href="<%=ORSView.ORDER_LIST_CTL%>"><i
-							class="fas fa-user-friends"></i>Order List</a>
-					</div></li>
-					
-					
-					
-					
-					
-					
-					<li class="nav-item dropdown" style="padding-left: 5px;"><a
-					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-					role="button" data-toggle="dropdown" aria-haspopup="true"
-				aria-expanded="false"> <font style="color: Black;">Client</font>
-				</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="<%=ORSView.CLIENT_CTL%>"> <i
-							class="fas fa-user-circle"></i>Add Client
-						</a> <a class="dropdown-item" href="<%=ORSView.CLIENT_LIST_CTL%>"><i
-							class="fas fa-user-friends"></i>Client List</a>
-					</div></li> 
- 	
-								 
-					
-					
-					
+					aria-expanded="false"> <font style="color: Black;">StaffMember</font>
 
+				</a>
+
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+						<a class="dropdown-item" href="<%=ORSView.STAFFMEMBER_CTL%>"><i
+							class="fas fa-calculator"></i>Add StaffMember</a> <a
+							class="dropdown-item" href="<%=ORSView.STAFFMEMBER_LIST_CTL%>">
+							<i class="fas fa-sort-amount-down"></i>StaffMember List
+
+						</a>
+						</div></li>
+					
+					
+			
 				<li class="nav-item dropdown" style="padding-left: 5px;"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
